@@ -1,9 +1,12 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import {Metadata} from "next";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <main className={styles.main}>
+
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
@@ -37,6 +40,10 @@ export default function Home() {
           height={37}
           priority
         />
+      </div>
+
+      <div>
+        <Link href="/dashboard">DASHBOARD LINK -></Link>
       </div>
 
       <div className={styles.grid}>
